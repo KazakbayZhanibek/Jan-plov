@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Жан-Плов — Выездной мастер плова. Алматы и весь Казахстан</title>
+<meta name="description" content="Готовлю настоящий узбекский плов прямо у вас — на тое, свадьбе или корпоративе. 15 лет опыта. Алматы и выезд по всему Казахстану. От 30 до 500+ порций.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo-192.png">
+<meta name="theme-color" content="#C94A1A">
+<!--
+  ВАЖНО: когда появится домен, замени REPLACE_WITH_YOUR_DOMAIN на реальный адрес
+  в og:url и og:image / twitter:image ниже (нужен полный https://... путь,
+  иначе превью в WhatsApp/Instagram/Telegram не подтянет картинку).
+  Пример: https://zhanplov.kz/assets/father.png
+-->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://REPLACE_WITH_YOUR_DOMAIN/">
+<meta property="og:title" content="Жан-Плов — Выездной мастер плова. Алматы и весь Казахстан">
+<meta property="og:description" content="Приезжаю с казаном и готовлю настоящий узбекский плов прямо при гостях. 15 лет опыта. От 30 до 500+ порций. Свадьбы, тои, корпоративы по всему Казахстану.">
+<meta property="og:image" content="https://REPLACE_WITH_YOUR_DOMAIN/assets/father.png">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="900">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Жан-Плов — Выездной мастер плова. Алматы и весь Казахстан">
+<meta name="twitter:description" content="Приезжаю с казаном и готовлю настоящий узбекский плов прямо при гостях. 15 лет опыта. От 30 до 500+ порций.">
+<meta name="twitter:image" content="https://REPLACE_WITH_YOUR_DOMAIN/assets/father.png">
+
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:'Inter',sans-serif;
+  background:#0E0A06;
+  color:#E8DCC8;
+  overflow-x:hidden;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.c{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;height:64px;
+  border-bottom:1px solid rgba(232,220,200,.06);
+  background:rgba(14,10,6,.85);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Unbounded',sans-serif;
+  font-size:13px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:#E8DCC8;
+}
+.nav-logo span{color:#C94A1A}
+.nav-logo-avatar{
+  width:44px;height:44px;border-radius:50%;
+  object-fit:cover;
+  border:1px solid rgba(201,74,26,.5);
+  flex-shrink:0;
+}
+.nav-links{
+  display:flex;gap:36px;list-style:none;
+}
+.nav-links a{
+  font-size:11px;font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(232,220,200,.45);
+  transition:color .2s;
+}
+.nav-links a:hover{color:#E8DCC8}
+.nav-cta{
+  font-family:'Unbounded',sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#0E0A06;background:#E8DCC8;
+  padding:10px 22px;
+  transition:background .2s,color .2s;
+}
+.nav-cta:hover{background:#C94A1A;color:#fff}
+.nav-links-cta-wrap{display:none}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.burger span{display:block;width:20px;height:1.5px;background:#E8DCC8}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  min-height:100svh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  position:relative;
+  overflow:hidden;
+}
+@media(min-width:1025px){
+  .hero{min-height:max(720px,100vh)}
+}
+.hero-left{
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:120px 64px 80px 80px;
+  position:relative;z-index:2;
+}
+.hero-right{
+  position:relative;overflow:hidden;
+}
+.hero-right::after{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(to right,#0E0A06 0%,transparent 30%),
+             linear-gradient(to top,#0E0A06 0%,transparent 25%);
+  z-index:1;
+}
+.hero-photo{
+  width:100%;height:100%;
+  background:#0E0A06;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+  overflow:hidden;
+  padding:56px;
+}
+.hero-photo::before{
+  content:'';position:absolute;inset:50px;
+  border:1px solid rgba(201,74,26,.10);
+  border-radius:4px;
+  pointer-events:none;z-index:3;
+}
+.hero-photo::after{
+  content:'';position:absolute;inset:56px;
+  border:1px solid rgba(232,220,200,.04);
+  border-radius:4px;
+  pointer-events:none;z-index:3;
+}
+.hero-photo-pattern{display:none}
+.hero-photo-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:25% 35%;
+  position:relative;z-index:2;
+  filter:saturate(1.08) contrast(1.05) brightness(1.02);
+  border:none;
+  box-shadow:
+    inset 0 0 0 1px rgba(232,220,200,.06),
+    0 8px 40px rgba(0,0,0,.5),
+    0 0 100px rgba(201,74,26,.04);
+}
+.hero-counter{
+  position:absolute;top:120px;right:60px;z-index:3;
+  display:flex;flex-direction:column;gap:32px;
+  border-right:1px solid rgba(232,220,200,.12);
+  padding-right:28px;
+}
+.hero-num{text-align:right}
+.hero-num-val{
+  font-family:'Unbounded',sans-serif;
+  font-size:32px;font-weight:900;
+  color:#E8DCC8;line-height:1;
+  display:block;
+}
+.hero-num-label{
+  font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(232,220,200,.3);margin-top:4px;display:block;
+}
+.hero-tag{
+  font-family:'Unbounded',sans-serif;
+  font-size:9px;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:#C94A1A;
+  margin-bottom:32px;
+  display:flex;align-items:center;gap:14px;
+}
+.hero-tag::before{content:'';display:block;width:40px;height:1px;background:#C94A1A}
+.hero-counter-mobile{display:none}
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(56px,7vw,96px);
+  font-weight:600;line-height:.92;
+  color:#E8DCC8;
+  margin-bottom:40px;
+  letter-spacing:-.02em;
+}
+h1 em{
+  font-style:italic;
+  color:#C94A1A;
+  display:block;
+}
+.hero-desc{
+  font-size:14px;color:rgba(232,220,200,.45);
+  line-height:1.9;max-width:400px;
+  margin-bottom:52px;
+}
+.hero-btns{display:flex;gap:12px;align-items:center}
+.btn-primary{
+  font-family:'Unbounded',sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:#C94A1A;color:#fff;
+  padding:16px 32px;
+  transition:background .2s;
+  display:inline-block;
+}
+.btn-primary:hover{background:#A33A12}
+.btn-ghost{
+  font-size:11px;letter-spacing:.08em;
+  color:rgba(232,220,200,.45);
+  padding:16px 8px;
+  border-bottom:1px solid rgba(232,220,200,.2);
+  transition:color .2s,border-color .2s;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.btn-ghost:hover{color:#E8DCC8;border-color:rgba(232,220,200,.5)}
+.hero-scroll{
+  position:absolute;bottom:48px;left:80px;z-index:3;
+  display:flex;align-items:center;gap:16px;
+  font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(232,220,200,.25);
+}
+.hero-scroll-line{
+  width:48px;height:1px;background:rgba(232,220,200,.2);
+  position:relative;overflow:hidden;
+}
+.hero-scroll-line::after{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:#C94A1A;
+  animation:scrollline 2s ease-in-out infinite;
+}
+@keyframes scrollline{0%{left:-100%}100%{left:100%}}
+
+/* ── MARQUEE ── */
+.marquee-wrap{
+  background:#C94A1A;
+  overflow:hidden;
+  padding:14px 0;
+  border-top:1px solid rgba(255,255,255,.1);
+  border-bottom:1px solid rgba(0,0,0,.2);
+}
+.marquee-track{
+  display:flex;gap:0;
+  animation:marquee 28s linear infinite;
+  white-space:nowrap;
+  width:max-content;
+}
+.marquee-track span{
+  font-family:'Unbounded',sans-serif;
+  font-size:10px;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.8);
+  padding:0 40px;
+}
+.marquee-track span.dot{
+  color:rgba(255,255,255,.4);padding:0 4px;font-size:6px;vertical-align:middle;
+}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── ABOUT ── */
+.about{
+  padding:140px 0;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0;
+}
+.about-photo-wrap{
+  position:relative;overflow:hidden;
+}
+.about-photo-inner{
+  width:100%;height:100%;min-height:640px;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%,rgba(201,74,26,.14) 0%,transparent 60%),
+    #161009;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+  padding:48px;
+}
+.about-photo-inner::before{
+  content:'';position:absolute;inset:42px;
+  border:1px solid rgba(201,74,26,.10);
+  border-radius:4px;
+  pointer-events:none;z-index:3;
+}
+.about-photo-inner::after{
+  content:'';position:absolute;inset:48px;
+  border:1px solid rgba(232,220,200,.04);
+  border-radius:4px;
+  pointer-events:none;z-index:3;
+}
+.about-photo-pattern{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(232,220,200,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(232,220,200,.025) 1px,transparent 1px);
+  background-size:56px 56px;
+}
+.about-photo-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:30% center;
+  position:relative;z-index:2;
+  filter:saturate(.95) contrast(1.04) brightness(1.01);
+  border:none;
+  box-shadow:
+    inset 0 0 0 1px rgba(232,220,200,.06),
+    0 20px 60px rgba(0,0,0,.6),
+    0 0 100px rgba(201,74,26,.04);
+}
+.about-photo-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to right,transparent 60%,#0E0A06 100%),
+             linear-gradient(to top,#0E0A06 0%,transparent 15%);
+}
+.about-badge-yr{
+  position:absolute;bottom:48px;left:48px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:96px;font-weight:700;
+  color:#C94A1A;opacity:.15;
+  line-height:1;letter-spacing:-.04em;
+  user-select:none;pointer-events:none;
+}
+.about-text{
+  padding:80px 80px 80px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.section-eyebrow{
+  font-family:'Unbounded',sans-serif;
+  font-size:9px;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:#C94A1A;
+  margin-bottom:24px;
+  display:flex;align-items:center;gap:16px;
+}
+.section-eyebrow::before{content:'';display:block;width:32px;height:1px;background:#C94A1A}
+h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(40px,4vw,60px);
+  font-weight:600;line-height:1.0;
+  color:#E8DCC8;
+  margin-bottom:28px;
+  letter-spacing:-.01em;
+}
+h2 em{color:#C94A1A;font-style:italic}
+.about-body{
+  font-size:14.5px;color:rgba(232,220,200,.5);
+  line-height:1.9;margin-bottom:20px;
+  max-width:440px;
+}
+.about-grid-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:0;
+  margin-top:56px;
+  border-top:1px solid rgba(232,220,200,.08);
+  padding-top:40px;
+}
+.stat-item{padding-right:32px}
+.stat-item+.stat-item{
+  padding-left:32px;padding-right:32px;
+  border-left:1px solid rgba(232,220,200,.08);
+}
+.stat-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:52px;font-weight:700;
+  color:#C94A1A;line-height:1;
+  display:block;letter-spacing:-.02em;
+}
+.stat-label{
+  font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(232,220,200,.3);
+  margin-top:6px;display:block;
+}
+
+/* ── PLOV ── */
+.plov-section{padding:0 0 140px}
+.plov-head{
+  padding:0 80px;
+  margin-bottom:64px;
+  display:flex;align-items:flex-end;justify-content:space-between;
+}
+.plov-head-right{
+  font-size:12px;color:rgba(232,220,200,.3);
+  max-width:280px;line-height:1.8;text-align:right;
+}
+.plov-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(232,220,200,.08);
+}
+.plov-card{
+  padding:48px 40px;
+  border-right:1px solid rgba(232,220,200,.08);
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.plov-card:last-child{border-right:none}
+.plov-card:hover{background:rgba(201,74,26,.04)}
+.plov-card-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:80px;font-weight:700;
+  color:rgba(232,220,200,.04);
+  position:absolute;top:24px;right:24px;
+  line-height:1;letter-spacing:-.04em;
+  user-select:none;
+}
+.plov-svg{
+  width:120px;height:80px;
+  margin-bottom:36px;
+  opacity:.75;
+}
+.plov-type{
+  font-family:'Unbounded',sans-serif;
+  font-size:8px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:#C94A1A;margin-bottom:14px;
+}
+.plov-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:600;
+  color:#E8DCC8;margin-bottom:14px;line-height:1.1;
+}
+.plov-desc{
+  font-size:13px;color:rgba(232,220,200,.4);
+  line-height:1.8;margin-bottom:32px;
+}
+.plov-price-row{
+  display:flex;align-items:baseline;gap:8px;
+  padding-top:24px;
+  border-top:1px solid rgba(232,220,200,.06);
+}
+.plov-price-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;font-weight:700;
+  color:#E8DCC8;letter-spacing:-.01em;
+}
+.plov-price-unit{
+  font-size:11px;color:rgba(232,220,200,.25);
+}
+
+/* ── PRICES ── */
+.prices-section{
+  padding:120px 0;
+  background:#0B0806;
+  border-top:1px solid rgba(232,220,200,.06);
+  border-bottom:1px solid rgba(232,220,200,.06);
+}
+.prices-inner{
+  display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;
+}
+.prices-label{
+  position:sticky;top:100px;
+}
+.prices-label p{
+  font-size:13.5px;color:rgba(232,220,200,.4);
+  line-height:1.9;margin-top:20px;margin-bottom:32px;
+}
+.prices-label-cta{
+  font-family:'Unbounded',sans-serif;
+  font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:#C94A1A;
+  display:flex;align-items:center;gap:12px;
+}
+.prices-label-cta::after{
+  content:'';display:block;width:32px;height:1px;background:#C94A1A;
+  transition:width .3s;
+}
+.prices-label-cta:hover::after{width:56px}
+.prices-table{width:100%}
+.pt-row{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+  padding:22px 0;
+  border-bottom:1px solid rgba(232,220,200,.06);
+  align-items:center;
+  transition:background .2s;
+  position:relative;
+}
+.pt-row:hover{background:rgba(201,74,26,.03)}
+.pt-row.head{
+  border-bottom:1px solid rgba(232,220,200,.15);
+  padding-bottom:16px;
+  margin-bottom:4px;
+}
+.pt-row.head .pt-cell{
+  font-family:'Unbounded',sans-serif;
+  font-size:8px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(232,220,200,.25);
+}
+.pt-row.featured::before{
+  content:'';position:absolute;left:-20px;top:0;bottom:0;
+  width:2px;background:#C94A1A;
+}
+.pt-cell{font-size:14px;color:rgba(232,220,200,.6)}
+.pt-cell.vol{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;color:#E8DCC8;letter-spacing:-.01em;
+}
+.pt-cell.price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;color:#C94A1A;
+}
+.pt-badge{
+  display:inline-block;
+  font-family:'Unbounded',sans-serif;
+  font-size:7px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:#C94A1A;color:#fff;
+  padding:3px 8px;margin-left:10px;vertical-align:middle;
+}
+
+/* ── EVENTS ── */
+.events-section{padding:140px 0}
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  margin-top:72px;
+  border-top:1px solid rgba(232,220,200,.08);
+  border-left:1px solid rgba(232,220,200,.08);
+}
+.ev-item{
+  padding:40px 28px;
+  border-right:1px solid rgba(232,220,200,.08);
+  border-bottom:1px solid rgba(232,220,200,.08);
+  transition:background .25s;
+  position:relative;overflow:hidden;
+}
+.ev-item::before{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;height:0;
+  background:linear-gradient(to top,rgba(201,74,26,.06),transparent);
+  transition:height .35s;
+}
+.ev-item:hover::before{height:100%}
+.ev-svg{
+  width:36px;height:36px;
+  margin-bottom:24px;
+  opacity:.45;
+  transition:opacity .25s;
+}
+.ev-item:hover .ev-svg{opacity:.75}
+.ev-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:17px;font-weight:600;
+  color:#E8DCC8;margin-bottom:10px;line-height:1.2;
+}
+.ev-desc{
+  font-size:11.5px;color:rgba(232,220,200,.3);
+  line-height:1.75;
+}
+
+/* ── REVIEWS ── */
+.reviews-section{
+  padding:140px 0;
+  background:#0B0806;
+  border-top:1px solid rgba(232,220,200,.06);
+  border-bottom:1px solid rgba(232,220,200,.06);
+}
+.reviews-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  margin-bottom:64px;
+}
+.reviews-head-right{
+  font-size:12px;color:rgba(232,220,200,.3);
+  max-width:280px;line-height:1.8;text-align:right;
+}
+.reviews-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(232,220,200,.08);
+  border-left:1px solid rgba(232,220,200,.08);
+}
+.rv-card{
+  padding:44px 36px;
+  border-right:1px solid rgba(232,220,200,.08);
+  border-bottom:1px solid rgba(232,220,200,.08);
+  display:flex;flex-direction:column;
+}
+.rv-stars{
+  display:flex;gap:3px;margin-bottom:28px;
+}
+.rv-stars svg{width:13px;height:13px;fill:#C94A1A}
+.rv-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px;font-weight:500;font-style:italic;
+  color:#E8DCC8;line-height:1.5;
+  margin-bottom:32px;
+  flex-grow:1;
+}
+.rv-author{
+  display:flex;align-items:center;gap:12px;
+  padding-top:20px;
+  border-top:1px solid rgba(232,220,200,.06);
+}
+.rv-avatar{
+  width:36px;height:36px;border-radius:50%;
+  background:#C94A1A;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Unbounded',sans-serif;
+  font-size:12px;font-weight:700;color:#fff;
+  flex-shrink:0;
+}
+.rv-name{
+  font-size:12.5px;font-weight:600;color:#E8DCC8;
+  letter-spacing:.01em;
+}
+.rv-event{
+  font-size:10px;color:rgba(232,220,200,.3);
+  letter-spacing:.08em;text-transform:uppercase;
+  margin-top:2px;
+}
+
+/* ── ORDER ── */
+.order-section{
+  padding:120px 0;
+  background:#0B0806;
+  border-top:1px solid rgba(232,220,200,.06);
+}
+.order-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:96px;align-items:start}
+.order-label .order-h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(36px,4vw,54px);
+  font-weight:600;line-height:1.05;
+  color:#E8DCC8;margin-bottom:24px;
+}
+.order-label .order-h2 em{color:#C94A1A;font-style:italic}
+.order-label p{
+  font-size:14px;color:rgba(232,220,200,.4);
+  line-height:1.9;margin-bottom:48px;
+}
+.order-features{list-style:none;display:flex;flex-direction:column;gap:16px}
+.order-features li{
+  font-size:13.5px;color:rgba(232,220,200,.5);
+  display:flex;align-items:flex-start;gap:16px;line-height:1.6;
+}
+.feat-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:700;color:#C94A1A;
+  min-width:20px;line-height:1.2;
+}
+
+/* ── FORM ── */
+.form-wrap{
+  background:#131009;
+  border:1px solid rgba(232,220,200,.08);
+  padding:52px 48px;
+}
+.form-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:600;
+  color:#E8DCC8;margin-bottom:36px;
+}
+.fg{margin-bottom:20px}
+.fg label{
+  display:block;
+  font-family:'Unbounded',sans-serif;
+  font-size:8px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(232,220,200,.3);margin-bottom:10px;
+}
+.fg input,.fg select,.fg textarea{
+  width:100%;
+  background:rgba(232,220,200,.03);
+  border:none;
+  border-bottom:1px solid rgba(232,220,200,.12);
+  padding:12px 0;
+  font-family:'Inter',sans-serif;
+  font-size:14px;color:#E8DCC8;
+  transition:border-color .2s;
+  outline:none;
+}
+.fg select{cursor:pointer}
+.fg select option{background:#131009;color:#E8DCC8}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-bottom-color:#C94A1A;
+}
+.fg input::placeholder,.fg textarea::placeholder{
+  color:rgba(232,220,200,.18);
+}
+.fg-two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.form-submit{
+  width:100%;
+  font-family:'Unbounded',sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:#C94A1A;color:#fff;
+  padding:18px;border:none;cursor:pointer;
+  transition:background .2s;
+  margin-top:8px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.form-submit:hover{background:#A33A12}
+.form-note{
+  font-size:10px;color:rgba(232,220,200,.2);
+  text-align:center;margin-top:16px;line-height:1.7;
+}
+
+/* ── CONTACTS ── */
+.contacts-section{padding:120px 0}
+.contacts-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  margin-top:72px;
+  border:1px solid rgba(232,220,200,.08);
+}
+.cnt-item{
+  padding:48px 36px;
+  border-right:1px solid rgba(232,220,200,.08);
+  transition:background .25s;
+}
+.cnt-item:last-child{border-right:none}
+.cnt-item:hover{background:rgba(232,220,200,.02)}
+.cnt-svg{margin-bottom:24px;opacity:.3}
+.cnt-label{
+  font-family:'Unbounded',sans-serif;
+  font-size:8px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(232,220,200,.25);margin-bottom:12px;
+}
+.cnt-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:600;color:#E8DCC8;
+  line-height:1.4;
+}
+.cnt-val a:hover{color:#C94A1A}
+
+/* ── FOOTER ── */
+footer{
+  padding:64px 0 40px;
+  border-top:1px solid rgba(232,220,200,.06);
+}
+.footer-inner{
+  display:flex;align-items:flex-end;justify-content:space-between;
+}
+.footer-logo-big{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(52px,7vw,96px);
+  font-weight:700;
+  color:rgba(232,220,200,.06);
+  line-height:1;letter-spacing:-.03em;
+  user-select:none;
+}
+.footer-right{text-align:right}
+.footer-links{
+  display:flex;gap:28px;list-style:none;
+  justify-content:flex-end;margin-bottom:20px;
+}
+.footer-links a{
+  font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(232,220,200,.25);transition:color .2s;
+}
+.footer-links a:hover{color:#E8DCC8}
+.footer-copy{
+  font-size:10px;color:rgba(232,220,200,.15);
+  letter-spacing:.05em;
+}
+
+/* ── WA ── */
+.wa{
+  position:fixed;bottom:32px;right:32px;z-index:99;
+}
+.wa-inner{
+  width:52px;height:52px;
+  background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  transition:transform .2s;
+  box-shadow:0 8px 32px rgba(37,211,102,.25);
+}
+.wa-inner:hover{transform:scale(1.08)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{
+    min-height:auto;
+    justify-content:flex-start;
+    padding:120px 40px 64px;
+  }
+  .hero-scroll{display:none}
+  .hero-right{display:none}
+  .hero-counter-mobile{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:32px;
+    margin-top:48px;
+    padding-top:32px;
+    border-top:1px solid rgba(232,220,200,.1);
+  }
+  .hero-counter-mobile .hero-num{text-align:left}
+  .hero-counter-mobile .hero-num-val{font-size:24px}
+  .about{grid-template-columns:1fr}
+  .about-photo-wrap{height:400px}
+  .about-photo-inner{min-height:400px;padding:24px}
+  .about-photo-inner::before{inset:20px}
+  .about-photo-inner::after{inset:24px}
+  .about-text{padding:60px 40px}
+  .about-grid-stats{grid-template-columns:repeat(3,1fr);gap:20px 12px}
+  .stat-val{font-size:34px}
+  .stat-item,.stat-item+.stat-item{padding-left:0;padding-right:0;border-left:none}
+  .plov-head{padding:0 40px}
+  .plov-grid{grid-template-columns:1fr}
+  .plov-card{border-right:none;border-bottom:1px solid rgba(232,220,200,.08)}
+  .prices-inner{grid-template-columns:1fr;gap:48px}
+  .prices-label{position:static;top:auto}
+  .events-grid{grid-template-columns:repeat(3,1fr)}
+  .reviews-grid{grid-template-columns:1fr}
+  .reviews-head{flex-direction:column;align-items:flex-start;gap:16px}
+  .reviews-head-right{text-align:left}
+  .order-grid{grid-template-columns:1fr;gap:56px}
+  .contacts-grid{grid-template-columns:repeat(2,1fr)}
+  .contacts-grid .cnt-item{border-bottom:1px solid rgba(232,220,200,.08)}
+  .contacts-grid .cnt-item:nth-child(2n){border-right:none}
+  .contacts-grid .cnt-item:last-child{border-bottom:none}
+  nav{padding:0 24px}
+  .nav-links{display:none}
+  .nav-links.open{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    top:64px;left:0;right:0;bottom:0;
+    height:calc(100vh - 64px);
+    background:#0E0A06;
+    padding:48px 40px;
+    gap:0;
+    z-index:99;
+    overflow-y:auto;
+  }
+  .nav-links.open li{
+    border-bottom:1px solid rgba(232,220,200,.08);
+  }
+  .nav-links.open a{
+    display:block;
+    padding:20px 0;
+    font-size:18px;
+    font-family:'Cormorant Garamond',serif;
+    letter-spacing:0;text-transform:none;
+    color:#E8DCC8;
+  }
+  .nav-links-cta-wrap{display:block;border-bottom:none!important;margin-top:24px}
+  .nav-links-cta{
+    display:inline-block!important;
+    font-family:'Unbounded',sans-serif!important;
+    font-size:11px!important;font-weight:700;letter-spacing:.1em;text-transform:uppercase!important;
+    color:#0E0A06!important;background:#C94A1A;
+    padding:16px 28px!important;
+  }
+  .burger{display:flex;position:relative;z-index:101}
+  .burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .burger span{transition:transform .25s,opacity .2s}
+  .nav-cta{display:none}
+  .footer-inner{flex-direction:column;gap:24px;align-items:flex-start}
+  .footer-right{text-align:left}
+  .footer-links{justify-content:flex-start;flex-wrap:wrap;gap:14px 20px}
+}
+@media(max-width:640px){
+  .c{padding:0 20px}
+  h1{font-size:48px}
+  .about{padding:80px 0}
+  .plov-section{padding:0 0 80px}
+  .plov-head{flex-direction:column;gap:16px;align-items:flex-start}
+  .plov-head-right{text-align:left}
+  .events-grid{grid-template-columns:repeat(2,1fr)}
+  .contacts-grid{grid-template-columns:1fr}
+  .contacts-grid .cnt-item{border-right:none;border-bottom:1px solid rgba(232,220,200,.08)}
+  .hero-counter-mobile{gap:20px}
+  .hero-counter-mobile .hero-num-val{font-size:21px}
+  .hero-counter-mobile .hero-num-label{font-size:8px}
+  .pt-row.head{display:none}
+  .pt-row{
+    display:grid;grid-template-columns:1fr 1fr;
+    gap:14px 16px;
+    padding:24px 0;
+  }
+  .pt-row.featured::before{left:-20px}
+  .pt-cell{position:relative}
+  .pt-cell::before{
+    content:attr(data-label);
+    display:block;
+    font-family:'Unbounded',sans-serif;
+    font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:rgba(232,220,200,.3);
+    margin-bottom:6px;
+  }
+  .fg-two{grid-template-columns:1fr}
+  .form-wrap{padding:32px 24px}
+}
+@media(max-width:400px){
+  .events-grid{grid-template-columns:1fr}
+  h1{font-size:38px}
+  .hero-counter-mobile{flex-wrap:wrap;gap:16px 24px}
+  .hero-counter-mobile .hero-num{min-width:90px}
+}
+
+/* ── FU ── */
+.fu{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.fu.vis{opacity:1;transform:translateY(0)}
+.fu:nth-child(2){transition-delay:.07s}
+.fu:nth-child(3){transition-delay:.14s}
+.fu:nth-child(4){transition-delay:.21s}
+.fu:nth-child(5){transition-delay:.07s}
+.fu:nth-child(6){transition-delay:.14s}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-logo"><img class="nav-logo-avatar" src="assets/logo.png" alt="Жан">Жан<span>·</span>Плов</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Мастер</a></li>
+    <li><a href="#plov">Плов</a></li>
+    <li><a href="#prices">Цены</a></li>
+    <li><a href="#events">Мероприятия</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+    <li class="nav-links-cta-wrap"><a href="#order" class="nav-links-cta">Оставить заявку</a></li>
+  </ul>
+  <a href="#order" class="nav-cta">Заказать</a>
+  <button class="burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-tag">Алматы · Выезд по Казахстану · 15 лет опыта</div>
+    <h1>Мастер плова<em>к вам в гости</em></h1>
+    <p class="hero-desc">Приезжаю с казаном и готовлю настоящий узбекский плов прямо при гостях — на вашей кухне, во дворе или на природе. 15 лет опыта, от 30 до 500 порций. Алматы и выезд по всему Казахстану.</p>
+    <div class="hero-btns">
+      <a href="#order" class="btn-primary">Оставить заявку</a>
+      <a href="https://wa.me/77479053247" class="btn-ghost" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <div class="hero-counter-mobile">
+      <div class="hero-num"><span class="hero-num-val">500+</span><span class="hero-num-label">порций за день</span></div>
+      <div class="hero-num"><span class="hero-num-val">15</span><span class="hero-num-label">лет опыта</span></div>
+      <div class="hero-num"><span class="hero-num-val">200+</span><span class="hero-num-label">тоев и свадеб</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo">
+      <img class="hero-photo-img" src="assets/hero_plov.jpg" alt="Настоящий узбекский плов — горячий, с бараниной и чесноком">
+    </div>
+    <div class="hero-counter">
+      <div class="hero-num"><span class="hero-num-val">500+</span><span class="hero-num-label">порций за день</span></div>
+      <div class="hero-num"><span class="hero-num-val">15</span><span class="hero-num-label">лет опыта</span></div>
+      <div class="hero-num"><span class="hero-num-val">200+</span><span class="hero-num-label">тоев и свадеб</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Прокрутить
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Ферганский плов</span><span class="dot">◆</span>
+    <span>Свадьба · Той</span><span class="dot">◆</span>
+    <span>Юбилей</span><span class="dot">◆</span>
+    <span>Корпоратив</span><span class="dot">◆</span>
+    <span>500+ порций</span><span class="dot">◆</span>
+    <span>15 лет опыта</span><span class="dot">◆</span>
+    <span>Алматы и весь Казахстан</span><span class="dot">◆</span>
+    <span>Казан на месте</span><span class="dot">◆</span>
+    <span>Ферганский плов</span><span class="dot">◆</span>
+    <span>Свадьба · Той</span><span class="dot">◆</span>
+    <span>Юбилей</span><span class="dot">◆</span>
+    <span>Корпоратив</span><span class="dot">◆</span>
+    <span>500+ порций</span><span class="dot">◆</span>
+    <span>15 лет опыта</span><span class="dot">◆</span>
+    <span>Алматы и весь Казахстан</span><span class="dot">◆</span>
+    <span>Казан на месте</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-photo-wrap">
+    <div class="about-photo-inner">
+      <div class="about-photo-pattern"></div>
+      <img class="about-photo-img" src="assets/father.png" alt="Жан — мастер плова, более 15 лет опыта">
+    </div>
+    <div class="about-photo-overlay"></div>
+    <div class="about-badge-yr">15</div>
+  </div>
+  <div class="about-text">
+    <div class="section-eyebrow">О мастере</div>
+    <h2>Меня зовут <em>Жан</em></h2>
+    <p class="about-body">Более 15 лет я посвятил искусству настоящего узбекского плова — учился у мастеров, оттачивал рецептуру, готовил на сотнях тоев и свадеб. Я не привожу готовое блюдо — я приезжаю с казаном и готовлю прямо у вас на глазах.</p>
+    <p class="about-body">Работаю в Алматы и выезжаю по всему Казахстану. Натуральные ингредиенты, правильная закладка риса, специи из Самарканда. Мой плов помнят — и возвращаются снова.</p>
+    <div class="about-grid-stats">
+      <div class="stat-item"><span class="stat-val">5K+</span><span class="stat-label">порций</span></div>
+      <div class="stat-item"><span class="stat-val">200+</span><span class="stat-label">тоев</span></div>
+      <div class="stat-item"><span class="stat-val">100%</span><span class="stat-label">довольных</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLOV -->
+<section class="plov-section" id="plov">
+  <div class="plov-head">
+    <div>
+      <div class="section-eyebrow">Виды плова</div>
+      <h2>Что <em>готовлю</em></h2>
+    </div>
+    <p class="plov-head-right">Каждый вид — особый рецепт. Выбор зависит от масштаба и традиций вашего торжества.</p>
+  </div>
+  <div class="plov-grid">
+
+    <div class="plov-card fu">
+      <div class="plov-card-num">01</div>
+      <svg class="plov-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="62" rx="48" ry="10" fill="#C94A1A" opacity=".15"/>
+        <path d="M14 46 Q15 68 60 73 Q105 68 106 46 Q106 28 60 22 Q14 28 14 46Z" fill="none" stroke="#C94A1A" stroke-width="1" opacity=".4"/>
+        <ellipse cx="60" cy="44" rx="44" ry="10" fill="#C94A1A" opacity=".2"/>
+        <rect x="56" y="14" width="3" height="28" rx="1.5" fill="#E8DCC8" opacity=".3"/>
+        <ellipse cx="57.5" cy="12" rx="6" ry="4" fill="#E8DCC8" opacity=".3"/>
+        <ellipse cx="57.5" cy="44" rx="5" ry="3.5" fill="#E8DCC8" opacity=".3"/>
+        <rect x="70" y="10" width="3" height="30" rx="1.5" fill="#E8DCC8" opacity=".2"/>
+        <ellipse cx="71.5" cy="8" rx="6" ry="4" fill="#E8DCC8" opacity=".2"/>
+        <ellipse cx="50" cy="38" rx="7" ry="7" fill="#E8DCC8" opacity=".1" stroke="#E8DCC8" stroke-width=".8"/>
+        <ellipse cx="74" cy="36" rx="7" ry="7" fill="#E8DCC8" opacity=".1" stroke="#E8DCC8" stroke-width=".8"/>
+        <path d="M38 38 Q42 26 56 28" stroke="#C94A1A" stroke-width=".8" fill="none" opacity=".5"/>
+        <path d="M82 36 Q86 24 100 28" stroke="#C94A1A" stroke-width=".8" fill="none" opacity=".5"/>
+      </svg>
+      <div class="plov-type">Классика</div>
+      <div class="plov-name">Ферганский плов</div>
+      <p class="plov-desc">Традиционный рецепт с отборной бараниной, жёлтой морковью и рисом девзира. По рецепту мастеров Ферганской долины.</p>
+      <div class="plov-price-row">
+        <span class="plov-price-val">800 ₸</span>
+        <span class="plov-price-unit">/ порция</span>
+      </div>
+    </div>
+
+    <div class="plov-card fu">
+      <div class="plov-card-num">02</div>
+      <svg class="plov-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="64" rx="52" ry="10" fill="#C94A1A" opacity=".12"/>
+        <path d="M10 44 Q12 70 60 75 Q108 70 110 44 Q110 22 60 16 Q10 22 10 44Z" fill="none" stroke="#C94A1A" stroke-width="1" opacity=".35"/>
+        <ellipse cx="60" cy="42" rx="48" ry="11" fill="#C94A1A" opacity=".18"/>
+        <rect x="53" y="10" width="3.5" height="30" rx="1.75" fill="#E8DCC8" opacity=".3"/>
+        <ellipse cx="54.75" cy="8" rx="7" ry="4.5" fill="#E8DCC8" opacity=".3"/>
+        <rect x="64" y="8" width="3.5" height="32" rx="1.75" fill="#E8DCC8" opacity=".25"/>
+        <ellipse cx="65.75" cy="6" rx="7" ry="4.5" fill="#E8DCC8" opacity=".25"/>
+        <rect x="74" y="12" width="3" height="28" rx="1.5" fill="#E8DCC8" opacity=".2"/>
+        <ellipse cx="75.5" cy="10" rx="6" ry="4" fill="#E8DCC8" opacity=".2"/>
+        <circle cx="36" cy="38" r="5" fill="#E8DCC8" opacity=".1" stroke="#E8DCC8" stroke-width=".8"/>
+        <circle cx="84" cy="36" r="5" fill="#E8DCC8" opacity=".1" stroke="#E8DCC8" stroke-width=".8"/>
+        <ellipse cx="48" cy="50" rx="3" ry="3" fill="#C94A1A" opacity=".3"/>
+        <ellipse cx="60" cy="52" rx="3" ry="3" fill="#C94A1A" opacity=".3"/>
+        <ellipse cx="72" cy="50" rx="3" ry="3" fill="#C94A1A" opacity=".3"/>
+        <path d="M8 44 L14 44 M106 44 L112 44" stroke="#E8DCC8" stroke-width="2" stroke-linecap="round" opacity=".2"/>
+      </svg>
+      <div class="plov-type">Свадебный</div>
+      <div class="plov-name">Той-плов</div>
+      <p class="plov-desc">Особый плов для больших торжеств. Большие казаны, изюм, нут и особые специи. Идеален для 100–500+ гостей.</p>
+      <div class="plov-price-row">
+        <span class="plov-price-val">700 ₸</span>
+        <span class="plov-price-unit">/ порция</span>
+      </div>
+    </div>
+
+    <div class="plov-card fu">
+      <div class="plov-card-num">03</div>
+      <svg class="plov-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="62" rx="46" ry="9" fill="#C94A1A" opacity=".15"/>
+        <path d="M16 45 Q17 67 60 72 Q103 67 104 45 Q104 27 60 21 Q16 27 16 45Z" fill="none" stroke="#C94A1A" stroke-width="1" opacity=".4"/>
+        <ellipse cx="60" cy="43" rx="42" ry="10" fill="#C94A1A" opacity=".2"/>
+        <rect x="42" y="20" width="22" height="18" rx="3" fill="#E8DCC8" opacity=".08" stroke="#E8DCC8" stroke-width=".8" opacity=".2"/>
+        <rect x="58" y="16" width="22" height="20" rx="3" fill="#E8DCC8" opacity=".06" stroke="#E8DCC8" stroke-width=".8" opacity=".15"/>
+        <path d="M44 24 Q53 20 62 24" stroke="#C94A1A" stroke-width=".8" fill="none" opacity=".4"/>
+        <path d="M60 20 Q69 16 78 20" stroke="#C94A1A" stroke-width=".8" fill="none" opacity=".3"/>
+        <rect x="88" y="32" width="2.5" height="24" rx="1.25" fill="#E8DCC8" opacity=".25"/>
+        <ellipse cx="89.25" cy="30" rx="5.5" ry="3.5" fill="#E8DCC8" opacity=".25"/>
+      </svg>
+      <div class="plov-type">Премиум</div>
+      <div class="plov-name">Плов с говядиной</div>
+      <p class="plov-desc">Нежное мясо, ароматный зирвак, отборный рис. Праздник вкуса для тех, кто предпочитает говядину.</p>
+      <div class="plov-price-row">
+        <span class="plov-price-val">850 ₸</span>
+        <span class="plov-price-unit">/ порция</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices-section" id="prices">
+  <div class="c">
+    <div class="prices-inner">
+      <div class="prices-label">
+        <div class="section-eyebrow">Прайс</div>
+        <h2>Цены<br>и <em>объёмы</em></h2>
+        <p>Плов считаем по килограммам. Минимальный заказ — 20 кг.</p>
+        <a href="#order" class="prices-label-cta">Рассчитать стоимость</a>
+      </div>
+      <div>
+        <div class="prices-table">
+          <div class="pt-row head">
+            <div class="pt-cell">Вид плова</div>
+            <div class="pt-cell">Цена за кг</div>
+            <div class="pt-cell">Минимум</div>
+          </div>
+          <div class="pt-row fu">
+            <div class="pt-cell vol" data-label="Вид">Домашний</div>
+            <div class="pt-cell price" data-label="Цена за кг">3 500 ₸</div>
+            <div class="pt-cell" data-label="Минимум">20 кг</div>
+          </div>
+          <div class="pt-row fu">
+            <div class="pt-cell vol" data-label="Вид">Праздничный</div>
+            <div class="pt-cell price" data-label="Цена за кг">4 500 ₸</div>
+            <div class="pt-cell" data-label="Минимум">20 кг</div>
+          </div>
+          <div class="pt-row featured fu">
+            <div class="pt-cell vol" data-label="Вид">Ташкентский <span class="pt-badge">классика</span></div>
+            <div class="pt-cell price" data-label="Цена за кг">5 000 ₸</div>
+            <div class="pt-cell" data-label="Минимум">20 кг</div>
+          </div>
+        </div>
+        <div class="prices-extra">
+          <div class="prices-extra-row">
+            <span>Выезд повара</span>
+            <span>30 000 ₸</span>
+          </div>
+          <div class="prices-extra-row">
+            <span>Доставка</span>
+            <span>по месту проведения</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events-section" id="events">
+  <div class="c">
+    <div class="section-eyebrow">Мероприятия</div>
+    <h2>Готовлю для <em>любого</em> торжества</h2>
+    <div class="events-grid">
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <circle cx="12" cy="22" r="9"/>
+          <circle cx="24" cy="22" r="9"/>
+          <circle cx="12" cy="22" r="4"/>
+          <circle cx="24" cy="22" r="4"/>
+        </svg>
+        <div class="ev-name">Свадьба</div>
+        <p class="ev-desc">Той на 100–500 гостей. Казан прямо на месте.</p>
+      </div>
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <rect x="5" y="18" width="26" height="13" rx="1"/>
+          <line x1="18" y1="18" x2="18" y2="13"/>
+          <line x1="11" y1="18" x2="11" y2="14"/>
+          <line x1="25" y1="18" x2="25" y2="14"/>
+          <circle cx="18" cy="12" r="2"/>
+          <circle cx="11" cy="13" r="2"/>
+          <circle cx="25" cy="13" r="2"/>
+        </svg>
+        <div class="ev-name">Юбилей</div>
+        <p class="ev-desc">Настоящий пир на дому, в ресторане или на природе.</p>
+      </div>
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <rect x="5" y="10" width="26" height="21" rx="1"/>
+          <line x1="5" y1="17" x2="31" y2="17"/>
+          <rect x="10" y="12.5" width="4" height="4"/>
+          <rect x="22" y="12.5" width="4" height="4"/>
+          <rect x="10" y="20" width="4" height="4"/>
+          <rect x="22" y="20" width="4" height="4"/>
+          <rect x="16" y="24" width="4" height="7"/>
+          <line x1="18" y1="5" x2="18" y2="10"/>
+          <line x1="14" y1="7" x2="22" y2="7"/>
+        </svg>
+        <div class="ev-name">Корпоратив</div>
+        <p class="ev-desc">Выездное приготовление во дворе офиса.</p>
+      </div>
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <rect x="13" y="14" width="10" height="16" rx="1"/>
+          <path d="M18 10 Q18 6 15 5 Q21 5 21 9 Q21 12 18 14 Q18 11 18 10Z"/>
+          <line x1="7" y1="30" x2="29" y2="30"/>
+        </svg>
+        <div class="ev-name">Поминки (Аш)</div>
+        <p class="ev-desc">С уважением и соблюдением всех традиций.</p>
+      </div>
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <polygon points="18,7 33,15 18,23 3,15"/>
+          <path d="M24 18 L24 26 Q18 30 12 26 L12 18"/>
+          <line x1="33" y1="15" x2="33" y2="23"/>
+          <circle cx="33" cy="24.5" r="1.5"/>
+        </svg>
+        <div class="ev-name">Выпускной</div>
+        <p class="ev-desc">Незабываемый праздник для выпускников и семей.</p>
+      </div>
+
+      <div class="ev-item fu">
+        <svg class="ev-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <path d="M18 5 L22 14 L20 14 L23 20 L19.5 20 L19.5 27 L16.5 27 L16.5 20 L13 20 L16 14 L14 14 Z"/>
+        </svg>
+        <div class="ev-name">Пикник</div>
+        <p class="ev-desc">Готовлю прямо на природе. Привожу всё сам.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="c">
+    <div class="reviews-head">
+      <div>
+        <div class="section-eyebrow">Отзывы</div>
+        <h2>Что <em>говорят</em></h2>
+      </div>
+      <p class="reviews-head-right">Реальные слова гостей, для которых я готовил на их праздниках.</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="rv-card fu">
+        <div class="rv-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p class="rv-quote">«Заказывали плов на свадьбу дочери — 180 порций. Гости до сих пор вспоминают. Жан приехал со своим казаном и всё сделал на месте.»</p>
+        <div class="rv-author">
+          <div class="rv-avatar">А</div>
+          <div>
+            <div class="rv-name">Айгуль Сатпаева</div>
+            <div class="rv-event">Свадьба · 180 порций</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rv-card fu">
+        <div class="rv-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p class="rv-quote">«Заказывали на корпоратив на 60 человек. Всё было вовремя, вкусно, без лишней суеты. Уже договорились на следующий год.»</p>
+        <div class="rv-author">
+          <div class="rv-avatar">Б</div>
+          <div>
+            <div class="rv-name">Бауыржан Ахметов</div>
+            <div class="rv-event">Корпоратив · 60 порций</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rv-card fu">
+        <div class="rv-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p class="rv-quote">«Лучший плов, который я ела в Алматы. Баранина мягкая, рис рассыпчатый, специи в меру. Рекомендую всем, кто ценит настоящий вкус.»</p>
+        <div class="rv-author">
+          <div class="rv-avatar">М</div>
+          <div>
+            <div class="rv-name">Мадина Ержанова</div>
+            <div class="rv-event">Юбилей · 100 порций</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order-section" id="order">
+  <div class="c">
+    <div class="order-grid">
+      <div class="order-label">
+        <div class="section-eyebrow">Заявка</div>
+        <h2 class="order-h2">Оставьте заявку — <em>перезвоню</em> за 30 минут</h2>
+        <p>Обсудим дату, количество гостей, место и детали вашего торжества. Работаю по всему Казахстану.</p>
+        <ul class="order-features">
+          <li><span class="feat-n">01</span>Выезжаю по Алматы — бесплатно</li>
+          <li><span class="feat-n">02</span>Привожу своё оборудование и казан</li>
+          <li><span class="feat-n">03</span>Продукты покупаю в день готовки</li>
+          <li><span class="feat-n">04</span>Готовлю на месте — не везу готовое</li>
+          <li><span class="feat-n">05</span>Выезжаю в другие города Казахстана — обсуждаем стоимость дороги индивидуально</li>
+        </ul>
+      </div>
+      <div class="form-wrap">
+        <div class="form-title">Заявка на плов</div>
+        <form id="orderForm" novalidate>
+          <div class="fg-two">
+            <div class="fg">
+              <label for="fname">Имя</label>
+              <input type="text" id="fname" name="name" placeholder="Асет Иванов" required>
+            </div>
+            <div class="fg">
+              <label for="fphone">Телефон</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+7 (700) 000-00-00" required>
+            </div>
+          </div>
+          <div class="fg-two">
+            <div class="fg">
+              <label for="fdate">Дата</label>
+              <input type="date" id="fdate" name="date" required>
+            </div>
+            <div class="fg">
+              <label for="fport">Порций</label>
+              <input type="number" id="fport" name="portions" min="30" placeholder="от 30" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="fevent">Мероприятие</label>
+            <select id="fevent" name="event">
+              <option value="">Выберите...</option>
+              <option>Свадьба (той)</option>
+              <option>Юбилей</option>
+              <option>Корпоратив</option>
+              <option>Поминки (аш)</option>
+              <option>Выпускной</option>
+              <option>Пикник / Сабантуй</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="faddr">Адрес</label>
+            <input type="text" id="faddr" name="address" placeholder="Алматы, ул. Абая, 1" required>
+          </div>
+          <div class="fg">
+            <label for="fcomment">Пожелания</label>
+            <textarea id="fcomment" name="comment" rows="2" placeholder="Вид плова, особые пожелания..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Отправить в WhatsApp
+          </button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts-section" id="contacts">
+  <div class="c">
+    <div class="section-eyebrow">Контакты</div>
+    <h2>Свяжитесь <em>с нами</em></h2>
+    <div class="contacts-grid">
+      <div class="cnt-item">
+        <svg class="cnt-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <path d="M26 19.1v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.5 8.34a2 2 0 012-2.18h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L9.59 14a16 16 0 006.29 6.29l1.36-1.36a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0126 19.1z"/>
+        </svg>
+        <div class="cnt-label">Телефон</div>
+        <div class="cnt-val"><a href="tel:+77479053247">+7 (747) 905-32-47</a></div>
+      </div>
+      <div class="cnt-item">
+        <svg class="cnt-svg" width="28" height="28" viewBox="0 0 24 24" fill="#E8DCC8">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <div class="cnt-label">WhatsApp</div>
+        <div class="cnt-val"><a href="https://wa.me/77479053247" target="_blank" rel="noopener">Написать в чат</a></div>
+      </div>
+      <div class="cnt-item">
+        <svg class="cnt-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <path d="M24.5 11.67c0 8.16-10.5 15.16-10.5 15.16S3.5 19.83 3.5 11.67a10.5 10.5 0 0121 0z"/>
+          <circle cx="14" cy="11.67" r="3.5"/>
+        </svg>
+        <div class="cnt-label">Город</div>
+        <div class="cnt-val"><a href="https://2gis.kz/almaty" target="_blank" rel="noopener">Алматы<br>и весь Казахстан</a></div>
+      </div>
+      <div class="cnt-item">
+        <svg class="cnt-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <circle cx="14" cy="14" r="11.67"/>
+          <polyline points="14 7 14 14 18.67 16.33"/>
+        </svg>
+        <div class="cnt-label">Режим работы</div>
+        <div class="cnt-val">Ежедневно<br>8:00 — 22:00</div>
+      </div>
+      <div class="cnt-item">
+        <svg class="cnt-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#E8DCC8" stroke-width="1.2" stroke-linecap="round">
+          <rect x="3.5" y="3.5" width="21" height="21" rx="5"/>
+          <circle cx="14" cy="14" r="5.5"/>
+          <circle cx="20.5" cy="7.5" r="1" fill="#E8DCC8" stroke="none"/>
+        </svg>
+        <div class="cnt-label">Instagram</div>
+        <div class="cnt-val"><a href="https://instagram.com/zhan.plov" target="_blank" rel="noopener">@zhan.plov</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="c">
+    <div class="footer-inner">
+      <div class="footer-logo-big">Жан-Плов</div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="#about">Мастер</a></li>
+          <li><a href="#plov">Плов</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#events">Мероприятия</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Жан-Плов · Алматы</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA -->
+<a href="https://wa.me/77479053247" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <div class="wa-inner">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </div>
+</a>
+
+<script>
+(function(){
+  // Burger
+  var burger=document.getElementById('burger');
+  var links=document.getElementById('navLinks');
+  if(burger&&links){
+    burger.addEventListener('click',function(){
+      var isOpen=links.classList.toggle('open');
+      burger.classList.toggle('open',isOpen);
+      document.body.style.overflow=isOpen?'hidden':'';
+    });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        links.classList.remove('open');
+        burger.classList.remove('open');
+        document.body.style.overflow='';
+      });
+    });
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=document.querySelector(this.getAttribute('href'));
+      if(!t)return;
+      e.preventDefault();
+      window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-64,behavior:'smooth'});
+      if(links)links.style.display='';
+    });
+  });
+
+  // Fade-up
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis');});
+  },{threshold:0.08});
+  document.querySelectorAll('.fu').forEach(function(el){io.observe(el);});
+
+  // Form
+  var form=document.getElementById('orderForm');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var d=new FormData(form);
+      var msg=[
+        'Здравствуйте, Жан!','',
+        'Меня зовут '+(d.get('name')||'—')+'.',
+        'Хочу заказать плов:','',
+        'Дата: '+(d.get('date')||'—'),
+        'Порций: '+(d.get('portions')||'—'),
+        'Мероприятие: '+(d.get('event')||'—'),
+        'Адрес: '+(d.get('address')||'—'),
+        'Пожелания: '+(d.get('comment')||'—'),
+        '','Телефон: '+(d.get('phone')||'—')
+      ].join('\n');
+      window.open('https://wa.me/77479053247?text='+encodeURIComponent(msg),'_blank');
+      var btn=form.querySelector('.form-submit');
+      var orig=btn.innerHTML;
+      btn.textContent='Отправлено — ждите звонка!';
+      btn.style.background='#25D366';
+      btn.disabled=true;
+      setTimeout(function(){btn.innerHTML=orig;btn.style.background='';btn.disabled=false;form.reset();},4000);
+    });
+  }
+
+  // Phone mask
+  var ph=document.getElementById('fphone');
+  if(ph){
+    ph.addEventListener('input',function(e){
+      var v=e.target.value.replace(/\D/g,'');
+      if(v.length>0){
+        if(v[0]==='7'||v[0]==='8')v=v.substring(1);
+        var f='+7';
+        if(v.length>0)f+=' ('+v.substring(0,3);
+        if(v.length>=3)f+=') '+v.substring(3,6);
+        if(v.length>=6)f+='-'+v.substring(6,8);
+        if(v.length>=8)f+='-'+v.substring(8,10);
+        e.target.value=f;
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
